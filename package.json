@@ -1,0 +1,11 @@
+{
+  "name": "cms-mvc-blogsite",
+  "version": "1.0.0",
+  "description": "This is a CMS-style blog site for Developers to publish articles, blog posts, and my thoughts and opinions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
