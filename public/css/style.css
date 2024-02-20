@@ -1,0 +1,301 @@
+/* ------------------------------------------------------------- */
+/* CSS VARIABLES */
+:root {
+    --nav-links: #fff; 
+    --dark: rgb(4, 25, 35);
+    --light: #27cafc;
+    --accent: #20fa9b;
+    --hover: #3b32eb;
+  }
+  
+  /* ------------------------------------------------------------- */
+  
+  /* UNIVERSAL */
+  * {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  /* ------------------------------------------------------------- */
+  
+  /* MAIN CSS */
+  header {
+    background-color: var(--dark);
+    height: 100px;  
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.778);
+  }
+  
+  footer {
+    background-color: var(--dark);
+    height: 80px;  
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.778);
+    margin-top: auto; /* Push the footer to the bottom of the container */
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  body {
+    background-color: var(--dark);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes at least the full viewport height */
+    margin: 0;
+  }
+  
+  p {
+    margin: 0;
+    color: var(--nav-links);
+  }
+  
+  h2,
+  h3,
+  h4 {
+    font-family: "Agdasima", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--nav-links);
+  }
+  
+  .no-button {
+    background: none;
+    border: none;
+    padding: 0;
+    color: var(--light);
+    text-decoration: none;
+    font-size: 100%;
+    cursor: pointer;
+  }
+  
+  .no-button:hover {
+    color: var(--hover);
+  }
+  
+  #tech-dl {
+    font-family: 'Honk', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 4.5rem;
+    font-weight: 600;
+    margin-left: 1rem;
+  }
+  
+  #tech-dl:hover {
+    font-size: 4.8rem;
+    transition: .1s;
+  }
+  
+  #github-link {
+    color: var(--accent);
+  }
+  
+  #dashboard,
+  #login,
+  #signup,
+  #logout {
+    margin-right: 1rem;
+    font-weight: 600;
+  }
+  
+  #dashboard:hover,
+  #login:hover,
+  #signup:hover,
+  #logout:hover,
+  #github-link:hover {
+    font-size: 1.3rem;
+    transition: .1s;
+    color: var(--hover);
+  }
+  
+  
+  
+  /* ------------------------------------------------------------- */
+  
+  /* HOMEPAGE CSS */
+  
+  .post-titles {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .post-titles:hover {
+    color: black; 
+    text-decoration: underline; 
+    transition: .1s;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    gap: 20px; /* Adjust the gap between cards */
+  }
+  
+  .post-card {
+    margin: 15px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: -8px 20px 15px rgba(0, 0, 0, 0.778);
+    background: linear-gradient(to bottom, white, var(--light), var(--hover));
+  
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .post-card:hover {
+    border: 5px solid black;
+    transition: .3s;
+  }
+  
+  .post-by {
+    color: black;
+    font-weight: 500;
+  }
+  
+  .post:not(:last-child) {
+    border-bottom: 2px solid var(--accent);
+  }
+  
+  /* ------------------------------------------------------------- */
+  
+  /* LOGIN/SIGNUP CSS */
+  
+  label {
+    color: var(--nav-links);
+  }
+  
+  .login-form,
+  .signup-form {
+    box-shadow: -8px 20px 15px rgba(0, 0, 0, 0.778);
+    padding: 26px;
+    border-radius: 20px;
+  }
+  
+  #why-signup {
+    margin: 9px;
+    text-align: center;
+  }
+  
+  /* ------------------------------------------------------------- */
+  
+  /* BTN CSS */
+  
+  #login-btn,
+  #signup-btn,
+  #create-btn,
+  #update-post-btn,
+  #delete-post-btn,
+  #submit-comment-btn {
+    margin-top: 11px;
+    color: black;
+    background: linear-gradient(to bottom, white, var(--light), var(--hover));
+    padding: 8px;
+    border: none; 
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+  
+  #login-btn:hover,
+  #signup-btn:hover,
+  #create-btn:hover,
+  #update-post-btn:hover,
+  #delete-post-btn:hover,
+  #submit-comment-btn:hover {
+    border: 5px solid black;
+    font-weight: bold;
+    transition: .3s;
+  }
+  
+  #delete-post-btn:hover {
+    background: rgb(235, 14, 55);
+  }
+  
+  #update-post-btn:hover {
+    background: rgb(157, 240, 205);
+  }
+  
+  
+  /* ------------------------------------------------------------- */
+  
+  /* DASHBOARD CSS */
+  
+  #welcome {
+    font-size: 3rem;
+  }
+  
+  #post-title-link {
+    color: var(--nav-links);
+  }
+  
+  #user-welcome,
+  #post-title-link:hover {
+    color: var(--accent);
+  }
+  
+  /* ------------------------------------------------------------- */
+  
+  /* Post/Comment CSS */
+  
+  #title-container {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    background: linear-gradient(to bottom, white, var(--light), var(--hover));
+    box-shadow: -8px 20px 15px rgba(0, 0, 0, 0.778);
+    padding: 15px;
+    border-radius: 16px;
+    border: 5px solid white; 
+  }
+  
+  #post-container {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    box-shadow: -8px 20px 45px rgba(0, 0, 0, 0.778);
+    padding: 30px;
+    margin-bottom: 5rem;
+    border-radius: 16px;
+  }
+  
+  #post-title,
+  #user-info {
+    color: black;
+  }
+  
+  .comment-card {
+  
+    display: flex;
+    justify-content: space-between;
+   
+  }
+  
+  .comment-container {
+    background-color: var(--dark);
+    box-shadow: -8px 20px 15px rgba(0, 0, 0, 0.778);
+    padding: 30px;
+  }
+  
+  .comment-content {
+    margin-right: 30px;
+  }
+  
+  /* ------------------------------------------------------------- */
+  
+  /* Media Queries CSS */
+  
+  @media screen and (max-width: 767px) {
+    header {
+      flex-direction: column;
+      height: 145px;
+    }
+  
+    #signup-btn-container,
+    #login-btn-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }

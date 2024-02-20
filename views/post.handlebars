@@ -1,0 +1,80 @@
+<div class="container mt-5" id="post-container">
+
+  <div id="title-container">
+
+    <h2 id="post-title">
+      {{title}}
+    </h2>
+
+    <p id="user-info">
+      by: {{user.username}} on {{format_date date_created}}
+    </p>
+
+  </div>
+
+  <p>
+    {{content}}
+  </p>
+
+</div>
+
+<div class="container mt-4">
+
+  <h3>
+    Comments
+  </h3>
+
+  {{#if comments.length}} 
+
+  {{#each comments as |comment|}}
+
+  <div class="card mb-3 comment-container">
+
+    <div class="card-body comment-card">
+
+      <p class="card-text comment-content">
+        {{comment.content}}
+      </p>
+
+      <p>- {{user.username}} on {{format_date date_posted}}</p>
+
+    </div>
+
+  </div>
+
+  {{/each}}
+
+  {{else}}
+
+  <p>Have a new thought? Be the first to comment!</p>
+
+  {{/if}} 
+
+  {{#if logged_in}}
+
+  <form class="mt-4 post-comment-form">
+
+    <div class="form-group">
+
+      <label for="comment-input">Add a Comment</label>
+
+      <textarea 
+      class="form-control" 
+      id="comment-input" 
+      rows="3"
+      >
+      </textarea>
+
+    </div>
+
+    <button type="submit" id="submit-comment-btn" class="btn btn-primary">
+      Confirm Comment
+    </button>
+
+  </form>
+
+  {{/if}}
+
+</div>
+
+<script src="/js/create-comment.js"></script>
