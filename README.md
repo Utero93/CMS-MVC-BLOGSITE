@@ -22,7 +22,7 @@ a CMS-style blog site similar to a Wordpress site, where developers can publish 
 
 ## URL
 
-[Click Here to View Deployed Site](https://daily-dev-dose-6efece3cf6b2.herokuapp.com/)
+[Click Here to View Deployed Site](https://techdl-blog-6e06e8958df7.herokuapp.com/)
 
 ## Screenshots
 
@@ -82,7 +82,7 @@ a CMS-style blog site similar to a Wordpress site, where developers can publish 
 
 ### Account Logout:
 
-- Click "Logout" in the navigation menu to securely log out of your account.
+- Click "Log out" in the navigation menu to securely log out of your account.
 
 ## Technologies
 
