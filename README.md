@@ -111,6 +111,6 @@ a CMS-style blog site similar to a Wordpress site, where developers can publish 
 
 ## Questions
 
-[Follow me on Github!](https://github.com/Dossman-thomas)
+[Follow me on Github!](https://github.com/utero93)
 
 Have any further questions? Feel free to reach me via angel.m.gonzalez193@gmail.com
